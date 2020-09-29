@@ -8,30 +8,43 @@
 
 import UIKit
 
-class ViewController: UIViewController
-{
-    @IBOutlet weak var favoriteColorView: UIView!
-    @IBOutlet weak var customButton: UIButton!
+class ViewController: UIViewController {
     
-    var favoriteColor: UIColor?
+    // MARK: - @IBOutlets
+    
+    @IBOutlet private weak var favoriteColorView: UIView!
+    @IBOutlet private weak var customButton: UIButton!
+    
+    // MARK: - Variables
+    
+    private var favoriteColor: UIColor?
+    
+    // MARK: - View Life Cycles
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.setup()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(true)
         self.favoriteColorView.backgroundColor = self.favoriteColor
     }
+    
+    // MARK: - IBActions
 
-    @IBAction func changeColorButton(_ sender: Any) {
+    @IBAction private func changeColorButton(_ sender: Any) {
+        
         self.favoriteColor = .systemGreen
         self.favoriteColorView.backgroundColor = self.favoriteColor
     }
     
+    // MARK: - Segues
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "toScreenTwo" {
             if let screen2 = segue.destination as? ViewControllerTwo {
                 screen2.favoriteColor = self.favoriteColor
@@ -40,7 +53,10 @@ class ViewController: UIViewController
         }
     }
     
-    func setup() {
+    // MARK: - Setup
+    
+    private func setup() {
+        
         self.favoriteColor = .white
         self.customButton.layer.cornerRadius = self.customButton.bounds.height/2
         self.favoriteColorView.layer.cornerRadius = self.favoriteColorView.bounds.height/2
@@ -49,7 +65,10 @@ class ViewController: UIViewController
     }
 }
 
+// MARK: - ColorDelegate
+
 extension ViewController: ColorDelegate {
+    
     func sendColorToFirstVC(data: UIColor) {
         self.favoriteColor = data
     }

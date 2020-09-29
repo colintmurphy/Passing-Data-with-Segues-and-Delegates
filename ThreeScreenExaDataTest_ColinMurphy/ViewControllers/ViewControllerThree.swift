@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewControllerThree: UIViewController
-{
-    @IBOutlet weak var favoriteColorView: UIView!
-    @IBOutlet weak var customButton: UIButton!
+class ViewControllerThree: UIViewController {
+    
+    // MARK: - @IBOutlets
+    
+    @IBOutlet private weak var favoriteColorView: UIView!
+    @IBOutlet private weak var customButton: UIButton!
+    
+    // MARK: - Variables
     
     var favoriteColor: UIColor?
     weak var colorDelegate: ColorDelegate?
+    
+    // MARK: - View Life Cycles
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +32,15 @@ class ViewControllerThree: UIViewController
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(true)
         self.favoriteColorView.backgroundColor = self.favoriteColor
     }
     
-    @IBAction func changeColorButton(_ sender: Any) {
+    // MARK: - IBActions
+    
+    @IBAction private func changeColorButton(_ sender: Any) {
+        
         self.favoriteColor = .systemPink
         self.favoriteColorView.backgroundColor = self.favoriteColor
         
@@ -39,7 +49,10 @@ class ViewControllerThree: UIViewController
         }
     }
     
-    func setup() {
+    // MARK: - Setup
+    
+    private func setup() {
+        
         self.customButton.layer.cornerRadius = self.customButton.bounds.height/2
         self.favoriteColorView.layer.cornerRadius = self.favoriteColorView.bounds.height/2
         self.favoriteColorView.layer.borderWidth = 3.0

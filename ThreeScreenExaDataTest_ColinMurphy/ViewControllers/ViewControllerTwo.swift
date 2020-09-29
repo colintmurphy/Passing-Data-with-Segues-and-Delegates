@@ -8,15 +8,22 @@
 
 import UIKit
 
-class ViewControllerTwo: UIViewController
-{
-    @IBOutlet weak var favoriteColorView: UIView!
-    @IBOutlet weak var customButton: UIButton!
+class ViewControllerTwo: UIViewController {
+    
+    // MARK: - @IBOutlets
+    
+    @IBOutlet private weak var favoriteColorView: UIView!
+    @IBOutlet private weak var customButton: UIButton!
+    
+    // MARK: - Variables
     
     var favoriteColor: UIColor?
     weak var colorDelegate: ColorDelegate?
     
+    // MARK: - View Life Cycles
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.setup()
     }
@@ -26,11 +33,15 @@ class ViewControllerTwo: UIViewController
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(true)
         self.favoriteColorView.backgroundColor = self.favoriteColor
     }
     
-    @IBAction func changeColorButton(_ sender: Any) {
+    // MARK: - IBActions
+    
+    @IBAction private func changeColorButton(_ sender: Any) {
+        
         self.favoriteColor = .systemTeal
         self.favoriteColorView.backgroundColor = self.favoriteColor
         
@@ -39,16 +50,23 @@ class ViewControllerTwo: UIViewController
         }
     }
     
+    // MARK: - Segues
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "toScreenThree" {
             if let screen3 = segue.destination as? ViewControllerThree {
+                
                 screen3.favoriteColor = self.favoriteColor
                 screen3.colorDelegate = self.colorDelegate
             }
         }
     }
     
-    func setup() {
+    // MARK: - Setup
+    
+    private func setup() {
+        
         self.customButton.layer.cornerRadius = self.customButton.bounds.height/2
         self.favoriteColorView.layer.cornerRadius = self.favoriteColorView.bounds.height/2
         self.favoriteColorView.layer.borderWidth = 3.0

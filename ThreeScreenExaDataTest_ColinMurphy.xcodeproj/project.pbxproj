@@ -62,16 +62,32 @@
 		21892A64250FE71E00DD3C2D /* ThreeScreenExaDataTest_ColinMurphy */ = {
 			isa = PBXGroup;
 			children = (
-				21892A65250FE71E00DD3C2D /* AppDelegate.swift */,
-				21892A67250FE71E00DD3C2D /* SceneDelegate.swift */,
+				21A715452523EC4A00ABA998 /* Support */,
 				21BFFFA72513D28F0067CFFA /* Protocols */,
 				21BFFFA62513D27F0067CFFA /* ViewControllers */,
-				21892A6B250FE71E00DD3C2D /* Main.storyboard */,
-				21892A6E250FE71F00DD3C2D /* Assets.xcassets */,
-				21892A70250FE71F00DD3C2D /* LaunchScreen.storyboard */,
-				21892A73250FE71F00DD3C2D /* Info.plist */,
+				21A715472523ED2C00ABA998 /* Storyboard */,
 			);
 			path = ThreeScreenExaDataTest_ColinMurphy;
+			sourceTree = "<group>";
+		};
+		21A715452523EC4A00ABA998 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				21892A70250FE71F00DD3C2D /* LaunchScreen.storyboard */,
+				21892A6E250FE71F00DD3C2D /* Assets.xcassets */,
+				21892A73250FE71F00DD3C2D /* Info.plist */,
+				21892A65250FE71E00DD3C2D /* AppDelegate.swift */,
+				21892A67250FE71E00DD3C2D /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		21A715472523ED2C00ABA998 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				21892A6B250FE71E00DD3C2D /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		21BFFFA62513D27F0067CFFA /* ViewControllers */ = {
@@ -314,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69P6K7C2T4;
-				INFOPLIST_FILE = ThreeScreenExaDataTest_ColinMurphy/Info.plist;
+				INFOPLIST_FILE = ThreeScreenExaDataTest_ColinMurphy/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69P6K7C2T4;
-				INFOPLIST_FILE = ThreeScreenExaDataTest_ColinMurphy/Info.plist;
+				INFOPLIST_FILE = ThreeScreenExaDataTest_ColinMurphy/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
