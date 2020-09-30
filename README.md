@@ -10,5 +10,5 @@
 ## Images
 
 <p align="center">
-  <img src="https://github.com/colintmurphy/Passing-Data-with-Segues-and-Delegates/blob/main/images/ezgif.com-gif-maker.gif" />
+  <img src="https://github.com/colintmurphy/Passing-Data-with-Segues-and-Delegates/blob/main/images/ezgif.com-gif-maker.gif" height="600" />
 </p>
