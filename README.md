@@ -9,4 +9,6 @@
 
 ## Images
 
-![alt text](https://github.com/colintmurphy/Passing-Data-with-Segues-and-Delegates/blob/main/images/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-09-18%20at%2009.07.50.png) ![alt text](https://github.com/colintmurphy/Passing-Data-with-Segues-and-Delegates/blob/main/images/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-09-18%20at%2009.12.08.png) ![alt text](https://github.com/colintmurphy/Passing-Data-with-Segues-and-Delegates/blob/main/images/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-09-18%20at%2009.12.18.png)
+<p align="center">
+  <img src="https://github.com/colintmurphy/Passing-Data-with-Segues-and-Delegates/blob/main/images/ezgif.com-gif-maker.gif" />
+</p>
