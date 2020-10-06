@@ -58,8 +58,8 @@ class ViewController: UIViewController {
     private func setup() {
         
         self.favoriteColor = .white
-        self.customButton.layer.cornerRadius = self.customButton.bounds.height/2
-        self.favoriteColorView.layer.cornerRadius = self.favoriteColorView.bounds.height/2
+        self.customButton.layer.cornerRadius = self.customButton.bounds.height / 2
+        self.favoriteColorView.layer.cornerRadius = self.favoriteColorView.bounds.height / 2
         self.favoriteColorView.layer.borderWidth = 3.0
         self.favoriteColorView.layer.borderColor = UIColor.white.cgColor
     }

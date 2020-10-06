@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol ColorDelegate: class {
+protocol ColorDelegate: AnyObject {
     func sendColorToFirstVC(data: UIColor)
 }

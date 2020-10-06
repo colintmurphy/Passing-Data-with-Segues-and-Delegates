@@ -28,6 +28,8 @@ class ViewControllerThree: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
         self.favoriteColorView.backgroundColor = self.favoriteColor
     }
     
@@ -53,8 +55,8 @@ class ViewControllerThree: UIViewController {
     
     private func setup() {
         
-        self.customButton.layer.cornerRadius = self.customButton.bounds.height/2
-        self.favoriteColorView.layer.cornerRadius = self.favoriteColorView.bounds.height/2
+        self.customButton.layer.cornerRadius = self.customButton.bounds.height / 2
+        self.favoriteColorView.layer.cornerRadius = self.favoriteColorView.bounds.height / 2
         self.favoriteColorView.layer.borderWidth = 3.0
         self.favoriteColorView.layer.borderColor = UIColor.white.cgColor
     }
